@@ -1,0 +1,232 @@
+
+"""Lista 1 - IP
+
+
+
+"""Questão 01:
+Ler (nota 1, nota2, nota3)
+media = (nota1 + nota2  nota3)/3
+se media >= 6
+    imprime aprovado
+    imprime media
+senao
+    imprime reprovado
+    imprime media
+
+Questão 02:
+ Casos = valor na linha 1
+ Declara "i" = 1
+ Enquanto "i" <= Casos
+       Ler linha "i"
+         total = primeiro numero da linha;
+         Popular = segundo numero
+         Geral = terceiro numero
+         Arquibancada = quarto numero
+         Cadeiras = quinto numero
+         
+         Soma = 0
+         Soma += ((Popular/100) * total) * 1.00
+         Soma += ((Geral/100) * total) * 5.00
+         Soma += ((Arquibancada/100) * total) * 10.00
+         Soma += ((Cadeiras/100) * total) * 20.00
+
+         imprime "A RENDA DO JOGO N." i "E =" Soma
+         
+
+         i += 1
+
+Questão 3:
+ Declara int soma = 0
+ Declara contador = 1
+
+ para cada número
+   func(número, contador)
+  
+ imprime soma
+
+
+ Função func(num, contador)
+     Se num > 9 ou num < 0
+       imprime "DIGITO INVALIDO"
+     Senão
+       soma += num * 10^(3-contador)
+     contador + 1
+
+Questão 4:
+ Ler primeiro número
+ salario = primeiro número
+
+ ler segundo número
+ consumo = segundo número
+
+ CKw = salario * 0.007
+ Cconsumo = CKw * consumo
+ Cdescunto = Cconsumo * 0.9
+
+
+ Imprime "Custo por kW: R$ {CKw} \n
+          Custo do consumo: R$ {Cconsumo} \n
+          Custo com desconto: R$ {Cdesconto}"
+
+Questão 5:
+ conta = primeira entrada
+ gasto = segunda entrada
+ tipo  = Terceira entrada
+ Valor = 0
+
+
+Se tipo == C
+     Valor = 500 + (gasto - 80)*0.25
+Se tipo == I
+     Valor = 800 + (gasto - 100)*0.04
+Se tipo == R
+     Valor = 5 + 0.05*gasto
+
+Imprime "CONTA = {conta} \n
+VALOR DA CONTA = {Valor} \n"
+
+Questão 6:
+
+ Para cada entrada
+   F = entrada
+   C = 5*(F - 32)/9
+   imprime "{F} FAHRENHEIT EQUIVALE A {C} CELSIUS \n"
+
+Questão 7:
+
+   F = primeira entrada
+   C = 5*(F - 32)/9
+   imprime "O VALOR EM CELSIUS = {c} \n"
+
+   P = segunda entrada
+   M =  P*25.4
+   imprime "A QUANTIDADE DE CHUVA E = {M} \n"
+
+Questão 8:
+ r = primeira entrada
+ h = segunda entrada
+ pi =  3.14159
+
+ valor = (pi*r*r*2 + 2*pi*r*h) * 100
+ imprimir  "O VALOR DO CUSTO E = {valor} \n"
+
+Questão 9:
+ a = primeira entrada
+ b = segunda entrada
+ c  = Terceira entrada
+
+ delta = b*b - 4*a*c
+ imprimir "O VALOR DE DELTA E = {delta}"
+
+Questão 10:
+ a = primeira entrada
+ b = segunda entrada
+ c  = Terceira entrada
+ d = quarta entrada
+
+ determinante = a*c - b*d
+ imprimir "O VALOR DO DETERMINANTE E = {determinante}"
+
+Questão 11:
+ Ler entrada
+ num = entrada
+ se resto de num/5 = 0 e resto de num3 = 0
+     imprimir "O NUMERO E DIVISIVEL"
+ senao
+     imprimir "O NUMERO NAO E DIVISIVEL"
+
+Questao 12:
+ Ler entrada
+ num = entrada
+ custo = 0
+
+ custo = custo + num/3 * 10
+ custo = custo + resto de num/3 * 5
+ imprimir "O VALOR A PAGAR E = {custo}"
+
+Questão 13:
+ Declara dictionary<int, char> Valores
+ adiciona os conjuntos de chave e valor
+     (9,0, A)
+     (7,5, B)
+     (6, C)
+     (0, D)
+
+ ler entrada
+ nota = entrada
+
+ para cada par de chave e valor em Valores
+    Se nota > chave
+     imprime "NOTA = {nota} CONCEITO = {chave}"
+     para o loop
+
+Questão 14:
+ Ler primeira entrada
+ h = primeira entrada
+ ler segunda entrada
+ a = segunda entrada
+
+ A = (3*a*a*3^0.5)2
+ Volume = (A * h)/3
+
+imprimir "O VOLUME DA PIRAMIDE E = {Volume} METROS CUBICOS"
+
+Questão 15:
+ num = entrada
+ i = 2
+
+ enquanto i <= num
+   
+     se i < num
+        imprime i*i
+        imprime \n
+     i = i + 2
+
+Questão 16:
+Ler salario
+se salario <= 300
+  salario = salario * 1.5
+senão
+  salario = salario * 1.3
+imprime "SALARIO COM REAJUSTE = {salario}"
+
+Questão 17:
+   Ler x,y
+   se resto de x/2 = 0
+      i = 1
+      enquanto i <= y
+        x = x + 2
+        imprime x
+        i = i + 1
+   senão
+        imprime "O PRIMEIRO NUMERO NAO E PAR"
+
+Questão 18:
+ Ler inicio, razao, n
+ i = 1
+ soma = inicio
+ enquanto i <= n
+     soma = soma + razao
+     i = i + 1
+ imprime soma
+
+Questão 19:
+ ler num
+ if num > 0 e num é inteiro
+    i = 1
+    enquanto i <= num
+       soma = soma + 1/i
+       i + 1
+    imprime soma
+ senao
+    imprime "Numero invalido!"
+
+Questão 20:
+  ler a, b, c
+  seg = 0
+  seg += a*3600
+  seg += b*60
+  seg += c
+  imprime "O TEMPO EM SEGUNDOS E = {seg}"
+  imprime "\n"
+"""
