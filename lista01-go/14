@@ -1,0 +1,22 @@
+
+package main
+import (
+    "fmt"
+    "math"
+    )
+
+func main() {
+
+    var h, aresta, Ab, volume float64 
+    
+    fmt.Scanln(&h, &aresta)
+    //fmt.Printf("%.2f %.2f \n", h, aresta)
+    
+    Ab = (3*aresta*aresta*math.Sqrt(3))/2
+    //fmt.Printf("%.2f \n", Ab)
+    
+    volume = (Ab*h)/3
+    //fmt.Printf("%.2f \n", volume)
+    
+    fmt.Printf("O VOLUME DA PIRAMIDE E = %f METROS CUBICOS", volume)
+    }
