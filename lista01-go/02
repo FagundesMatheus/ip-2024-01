@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+
+func main() {
+    var n, p, g, a, c, total, valor float32
+    var str string
+    
+    fmt.Scanln(&n)
+    for i := 1; i<= int(n); i++{
+        fmt.Scanln(&total, &p, &g, &a, &c)
+        valor = 0
+        valor += 1*total*p/100 + 5*total*g/100 + 10*total*a/100 + 20*total*c/100
+        str += fmt.Sprintf("A RENDA DO JOGO N. %d E = %.2f \n", i, valor)
+    }
+    fmt.Print(str)
+
+}
