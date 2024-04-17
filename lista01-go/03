@@ -1,0 +1,11 @@
+package main
+import "fmt"
+
+func main() {
+  var n1, n2, n3 string;
+  fmt.Scanln(&n1, &n2, &n3)
+  var num = n1 + n2 + n3
+  if len(num) > 3 {
+      fmt.Print("DIGITO INVALIDO")
+  } else {fmt.Print(num)}
+}
