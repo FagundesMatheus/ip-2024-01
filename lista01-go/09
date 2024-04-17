@@ -1,0 +1,11 @@
+package main
+import "fmt"
+func main() {
+    var a, b, c float32
+    fmt.Scanln(&a)
+    fmt.Scanln(&b)
+    fmt.Scanln(&c)
+    
+    var delta float32 = b*b - 4*a*c
+    fmt.Print(delta)
+} 
