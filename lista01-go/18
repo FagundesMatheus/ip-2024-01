@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+
+func main() {
+   var primeiro, razao, n, soma int
+   fmt.Scanln(&primeiro, &razao, &n)
+   
+   soma = primeiro
+   
+   for i := 1; i<n; i++{
+       soma += primeiro+i*razao
+   }
+   
+   fmt.Print(soma)
+}
