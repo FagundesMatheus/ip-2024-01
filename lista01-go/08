@@ -1,0 +1,10 @@
+package main
+import "fmt"
+func main() {
+     var r, h float32
+     fmt.Scanln(&r)
+     fmt.Scanln(&h)
+     
+     var a float32 = 100*(2*(3.14159*r*r) + 2*3.14159*r*h)
+     fmt.Printf("%.2f", a)
+} 
