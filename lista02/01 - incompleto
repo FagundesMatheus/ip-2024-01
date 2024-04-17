@@ -1,0 +1,24 @@
+package main
+import "fmt"
+
+func main() {
+  var matricula, p1, p2, p3, p4, p5, p6, p7, p8, l1, l2, l3, l4, l5, trabalho, frequencia, flag float32
+  var mp, ml, nf float32
+  var str string
+  for flag == 0{
+      fmt.Scanln(&p1, &p2, &p3, &p4, &p5, &p6, &p7, &p8, &l1, &l2, &l3, &l4, &l5, &trabalho, &frequencia)
+      if p1 == -1 {flag = 1; continue}
+      mp = (p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8)/8
+      ml = (l1 + l2 + l3 + l4 + l5)/5
+      nf = 0.7*mp + 0.15*ml + 0.15*trabalho
+      //fmt.Print("mp mp nf")
+      
+      switch {
+          case (nf >= 6) && (frequencia >= 128*0.75):
+             str += fmt.Sprintf("Matricula: %f, Nota Final:%.2f, Situação Final: Aprovado", matricula, nf)
+          
+      }
+      
+  }
+  fmt.Print(str)
+}
