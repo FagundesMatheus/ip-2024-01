@@ -1,0 +1,12 @@
+package main
+import "fmt"
+func main() {
+    var salarioMinimo, kwGasto float32
+    fmt.Scanln(&salarioMinimo, &kwGasto)
+    
+    var kw float32 = salarioMinimo * 0.007
+    var custoConsumo float32 = kw * kwGasto
+    var custoComDesconto = custoConsumo * 0.9
+    
+    fmt.Printf("Custo por kW: R$ %.2f \nCusto do consumo: R$ %.2f\nCusto com desconto: R$ %.2f", kw, custoConsumo, custoComDesconto)
+}
