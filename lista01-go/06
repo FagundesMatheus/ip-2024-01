@@ -1,0 +1,16 @@
+package main
+import "fmt"
+func main() {
+    var n int
+    var f float32
+    var c float32
+    var str string
+    
+    fmt.Scanln(&n)
+    for i := 1; i <= n; i++ {
+        fmt.Scanln(&f)
+        c = (5*(f - 32))/9
+        str += fmt.Sprintf("%.2f FAHRENHEIT EQUIVALE A %.2f CELSIUS\n", f, c)
+    }
+    fmt.Print(str)
+} 
