@@ -1,0 +1,15 @@
+
+package main
+import "fmt"
+
+func main() {
+  var num int;
+  var valor int = 0;
+  fmt.Scanln(&num)
+  
+  valor += (num/3)*10
+  valor += (num%3) * 5
+  
+  fmt.Println("O VALOR A PAGAR É = %d", valor)
+  
+}
