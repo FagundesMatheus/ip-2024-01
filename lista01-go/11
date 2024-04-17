@@ -1,0 +1,10 @@
+package main
+import "fmt"
+
+func main() {
+  var num int;
+  fmt.Scanln(&num)
+  if (num%3 == 0) && (num%5 == 0){
+      fmt.Print("O NÚMERO É DIVISIVEL")
+  } else {fmt.Print(" O NÚMERO NAO É DIVISIVEL")}
+}
