@@ -1,0 +1,21 @@
+package main
+import "fmt"
+func main() {
+    var nConta int
+    var consumo float32 
+    var tipoConsumidor string
+    var valor float32
+    
+    fmt.Scanln(&nConta, &consumo, &tipoConsumidor)
+    
+    switch tipoConsumidor {
+        case "R":
+          valor = 5 + consumo * 0.05
+        case "I":
+          if consumo > 100 {valor = 800 + (consumo - 100) * 0.04} else {valor = 800}
+        case "C":
+          if consumo > 80 {valor = 500 + (consumo - 80) * 0.25} else {valor = 500}
+    }
+    
+    fmt.Printf("CONTA = %d\nVALOR DA CONTA = %.2f", nConta, valor)
+} 
