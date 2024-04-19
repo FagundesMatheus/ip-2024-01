@@ -1,0 +1,29 @@
+
+package main
+import "fmt"
+
+func main() {
+   var arr [16]float32;
+   var mp, ml, nt, nf, freq float32;
+   
+   for  {
+     for i:=0; i<16; i++{
+         fmt.Scanf("%f", &arr[i]);
+         if arr[0] == -1 {break}
+         if (i >= 1) && (i <= 8) {mp += arr[i]/8}
+         if (i >= 9) && (i <= 13) {ml += arr[i]/5}
+         if i == 14 {nt = arr[14]}
+         if i == 15 {freq = arr[15]}
+         } 
+
+      if arr[0] == -1 {break}
+      nf = 0.7*mp + 0.15*ml + 0.15*nt
+   
+     if (nf >= 6) && (freq >= 0.78*128) {fmt.Printf("Matricula: %.0f, Nota Final: %.2f, Situacao Final:APROVADO", arr[0], nf)}
+     if (nf <= 6) && (freq >= 0.78*128) {fmt.Printf("Matricula: %.0f, Nota Final: %.2f, Situacao Final:REPROVADO POR NOTA", arr[0], nf)}
+     if (nf >= 6) && (freq <= 0.78*128) {fmt.Printf("Matricula: %.0f, Nota Final: %.2f, Situacao Final:REPROVADO POR FREQUENCIA", arr[0], nf)}
+     if (nf <= 6) && (freq <= 0.78*128) {fmt.Printf("Matricula: %.0f, Nota Final: %.2f, Situacao Final:REPROVADO POR NOTA E POR FREQUENCIA", arr[0], nf)}
+   // entrada teste 4448901 2.3 3.2 4.3 5.0 6.5 7.2 7.3 8.4 9.2 8.3 9.5 7.6 10.0 9.0 118
+   }
+}
+   
