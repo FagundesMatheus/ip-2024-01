@@ -1,0 +1,14 @@
+
+package main
+import "fmt"
+
+func main() {
+     var n int
+     var fatorial int = 1
+     fmt.Scanln(&n)
+     
+     for i := 1; i <= n; i++{
+         fatorial *= i
+     }
+     fmt.Printf("%d! = %d", n, fatorial)
+}
