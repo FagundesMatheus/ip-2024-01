@@ -1,0 +1,23 @@
+package main
+import "fmt"
+
+func main() {
+     var n, i, k, s float32
+     var adicao string = "Tabuada de soma: \n"
+     var subtracao string = "Tabuada de subtracao: \n"
+     var multiplicacao string = "Tabuada de multiplicacao: \n"
+     var divisao string = "Tabuada de divisao: \n"
+     fmt.Scanln(&n, &i, &k, &s)
+     
+     for j := 0; j < int(k); j++{
+
+         adicao += fmt.Sprintf("%.0f + %.2f = %.2f\n", n, i + float32(j)*s, n + i + float32(j)*s)
+         subtracao += fmt.Sprintf("%.0f - %.2f = %.2f\n", n, i + float32(j)*s, n - (i + float32(j)*s))
+         multiplicacao += fmt.Sprintf("%.0f x %.2f = %.2f\n", n, i + float32(j)*s, n * (i + float32(j)*s))
+         divisao += fmt.Sprintf("%.0f / %.2f = %.2f\n", n, i + float32(j)*s, n / (i + float32(j)*s))
+     }
+     fmt.Println(adicao)
+     fmt.Println(subtracao)
+     fmt.Println(multiplicacao)
+     fmt.Println(divisao)
+}
