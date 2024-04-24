@@ -1,0 +1,18 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var pA, pB, anos int
+	fmt.Scanln(&pA)
+	fmt.Scanln(&pB)
+	
+	for pA <= pB {
+		pA = int(float64(pA) * 1.03)
+		pB = int(float64(pB) * 1.015) 
+		anos++
+	}
+	fmt.Printf("ANOS = %d\n", anos)
+}
