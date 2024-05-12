@@ -1,34 +1,3 @@
-/*package main
-
-import "fmt"
-
-func main() {
-	var n, max2 int
-	n1 := make([]int, 3)
-	n2 := make([]int, 3)
-	fmt.Scanln(&n)
-	for j := 1; j < n; j++ {
-
-		if j == 1 {
-			for i := 0; i < 2; i++ {
-				fmt.Scan(&n1[i])
-			}
-		} else {
-			for i := 0; i < 3; i++ {
-				n1[i] = n2[i]
-			}
-		}
-		for i := 0; i < 2; i++ {
-			fmt.Scan(&n2[i])
-			if n2[i]-n1[i] > max2 {
-				max2 = n2[i] - n1[i]
-			}
-		}
-		fmt.Println(max2)
-	}
-
-} */
-
 package main
 
 import (
