@@ -7,19 +7,19 @@ import (
 )
 
 func main() {
-	var str string
+	var str string = "Ola mundo, meu nome e Maria; Era uma vez um lobo mal..."
 	var flag bool = false
 	var sum float64
 
 	var A [6]int
 	var B [6]int
 
-	fmt.Scan(&str)
+	//fmt.Scan(&str)
 	char := []rune(strings.ToLower(str))
 
 	for i := 0; i < len(char); i++ {
 		if string(char[i]) == ";" {
-			if flag == false {
+			if !flag {
 				flag = true
 			} else {
 				fmt.Println("FORMATO INVALIDO!")
@@ -34,10 +34,10 @@ func main() {
 		}
 
 	}
-	if !flag {
-		//fmt.Print("FORMATO INVALIDO!")
-		//return
-	}
+	//if !flag {
+	//fmt.Print("FORMATO INVALIDO!")
+	//return
+	//}
 	for i := 1; i < 6; i++ {
 		sum += math.Pow(float64(A[i]-B[i]), 2)
 	}
