@@ -34,10 +34,10 @@ func main() {
 		}
 
 	}
-	if !flag {
+	//if !flag {
 		//fmt.Print("FORMATO INVALIDO!")
 		//return
-	}
+	//}
 	for i := 1; i < 6; i++ {
 		sum += math.Pow(float64(A[i]-B[i]), 2)
 	}
